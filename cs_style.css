@@ -1,0 +1,16 @@
+/* ------------- THE TITLE ------------- */
+
+.CSTitle {
+  margin-top: 15px;
+
+  font-size: 4vmin;
+  text-align: center;
+  color: #dbcfff;
+}
+
+.CSTitle > h2 {
+  margin-top: 5px;
+  font-size: 10vmin;
+}
+
+/* ------------- THE MAIN BODY ------------- */

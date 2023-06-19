@@ -1,4 +1,4 @@
-/* The main stuff like the background */
+/* ------------- The main stuff like the background ------------- */
 /*
     The color palette goes like this:
       #11009E
@@ -32,12 +32,19 @@ body {
   line-height: 10px;
 }
 
-.Headline > h1 {
+.Headline > button {
   font-size: 10vmin;
+
   color: #dbcfff;
+  background-color: transparent;
+  border-color: transparent;
 }
 
-/* The option between two main resumes */
+.Headline > button:hover {
+  cursor: pointer;
+}
+
+/* ------------- The option between two main resumes ------------- */
 
 .WhichResume {
   margin-top: 55px;
@@ -62,6 +69,7 @@ body {
 
 .choose-resume-buttons > button:hover {
   transition: 0.5s;
+  cursor: pointer;
 
   font-size: 5vmin;
   border-color: #8696fe;

@@ -1,13 +1,69 @@
 /* The main stuff like the background */
 /*
     The color palette goes like this:
-    Primary - #364f6b
-    Secondary - #3FC1C9
-    Additional - #F5F5F5
-    Important - #FC5185
+      #11009E
+      #4942E4
+      #8696FE
+      #C4B0FF
+      #dbcfff
 */
 
 body {
-  background-color: #364f6b;
+  background-color: #4942e4;
   align-content: center;
+  color: #8696fe;
+
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+}
+
+/* The Header */
+
+.Headline {
+  width: 100%;
+  background-color: #11009e;
+  margin: 0;
+
+  padding-top: 15px;
+  padding-bottom: 5px;
+  border-radius: 0 0 35px 35px;
+
+  text-align: center;
+  line-height: 10px;
+}
+
+.Headline > h1 {
+  font-size: 10vmin;
+  color: #dbcfff;
+}
+
+/* The option between two main resumes */
+
+.WhichResume {
+  margin-top: 55px;
+
+  font-size: 4vmin;
+  text-align: center;
+  color: #dbcfff;
+}
+
+.choose-resume-buttons > button {
+  background-color: #11009e;
+  border: solid 2px transparent;
+  border-radius: 15px;
+
+  font-size: 4vmin;
+  color: #dbcfff;
+  padding: 8px;
+  margin: 1vmin 2.5vmin;
+
+  transition: 0.5s;
+}
+
+.choose-resume-buttons > button:hover {
+  transition: 0.5s;
+
+  font-size: 5vmin;
+  border-color: #8696fe;
+  color: #dbd0fd;
 }

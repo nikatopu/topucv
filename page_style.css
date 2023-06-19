@@ -1,0 +1,13 @@
+/* The main stuff like the background */
+/*
+    The color palette goes like this:
+    Primary - #364f6b
+    Secondary - #3FC1C9
+    Additional - #F5F5F5
+    Important - #FC5185
+*/
+
+body {
+  background-color: #364f6b;
+  align-content: center;
+}

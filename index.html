@@ -13,26 +13,41 @@
     <div class="Headline">
       Welcome To The
       <br />
-      <br />
       <button onclick="choose_between_resumes()">TOPU'S RESUME</button>
     </div>
     <div class="Main" id="Main">
-      <!--  CHOOSING RESUME  
+      <!--  CHOOSING RESUME  -->
 
       <div class="WhichResume">
         <h2>Choose The Theme</h2>
         <div class="choose-resume-buttons">
-          <button onclick="open_cs_resume()">Computer Science</button>
-          <button onclick="open_creative_resume()">Creative Writing</button>
+          <button
+            onclick="open_cs_resume()"
+            onmouseover="mouse_over_cs()"
+            onmouseleave="mouse_leave_info()"
+          >
+            Computer Science
+          </button>
+          <button
+            onclick="open_creative_resume()"
+            onmouseover="mouse_over_creative()"
+            onmouseleave="mouse_leave_info()"
+          >
+            Creative Writing
+          </button>
         </div>
+
+        <div id="info"></div>
       </div>
-      -->
+
+      <!--
       <div class="CSResume">
         <div class="CSTitle">
           My Experience In The Field Of
           <h2>Computer Science</h2>
         </div>
       </div>
+      -->
     </div>
   </body>
 </html>

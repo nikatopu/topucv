@@ -1,17 +1,17 @@
 /* ------------- The main stuff like the background ------------- */
 /*
     The color palette goes like this:
-      #11009E
-      #4942E4
+      #1b1b1b
+      #dbdbdb
       #8696FE
       #C4B0FF
       #dbcfff
 */
 
 body {
-  background-color: #4942e4;
+  background-color: #dbdbdb;
   align-content: center;
-  color: #8696fe;
+  color: #ffffff;
 
   font-family: "Times New Roman", Times, serif;
   margin: 0;
@@ -21,7 +21,7 @@ body {
 
 .Headline {
   width: 100%;
-  background-color: #11009e;
+  background-color: #1b1b1b;
   margin: 0;
 
   padding-top: 15px;
@@ -35,7 +35,7 @@ body {
 .Headline > button {
   font-size: 10vmin;
 
-  color: #dbcfff;
+  color: #5a6ffb;
   background-color: transparent;
   border-color: transparent;
 }
@@ -51,16 +51,16 @@ body {
 
   font-size: 4vmin;
   text-align: center;
-  color: #dbcfff;
+  color: #000000;
 }
 
 .choose-resume-buttons > button {
-  background-color: #11009e;
+  background-color: #1b1b1b;
   border: solid 2px transparent;
   border-radius: 15px;
 
   font-size: 4vmin;
-  color: #dbcfff;
+  color: #ffffff;
   padding: 8px;
   margin: 1vmin 2.5vmin;
 
@@ -72,6 +72,20 @@ body {
   cursor: pointer;
 
   font-size: 5vmin;
-  border-color: #8696fe;
-  color: #dbd0fd;
+  background-color: #5a6ffb;
+  color: #dedede;
+}
+
+/* ------------- ADDITIONAL INFORMATION ------------- */
+/* ------------- CS ------------- */
+
+.Additional-Info {
+  width: 35%;
+  margin: auto;
+  margin-top: 15px;
+  border: 2px solid #000000;
+
+  padding: 0 1% 0 1%;
+  text-align: center;
+  list-style-position: outside;
 }

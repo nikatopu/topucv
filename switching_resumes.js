@@ -7,22 +7,51 @@ function empty_main_div() {
 
 // ------------------- CHOOSING THE MAIN OPTIONS ------------------- #
 function choose_between_resumes() {
-  var _main = empty_main_div();
-  _main.innerHTML = `<div class="WhichResume">
-  <h2>Choose The Theme</h2>
-  <div class="choose-resume-buttons">
-    <button onclick="open_cs_resume()">Computer Science</button>
-    <button onclick="open_creative_resume()">Creative Writing</button>
+  window.location.href = "index.html";
+}
+
+// Main Option Animations
+function mouse_over_cs() {
+  var _info = document.getElementById("info");
+  _info.innerHTML = `
+  <div class="Additional-Info">
+  <h3>Short Summery</h3>
+  The CS side of my resume contains:
+  <ul>
+    <li>Programming Languages I Know</li>
+    <li>The Games I Developed</li>
+    <li>Other Mini Projects</li>
+  </ul>
   </div>
-</div>`;
+  `;
+}
+
+function mouse_over_creative() {
+  var _info = document.getElementById("info");
+  _info.innerHTML = `
+  <div class="Additional-Info">
+  <h3>Short Summery</h3>
+  The CREATIVE side of my resume contains:
+  <ul>
+    <li>My Short Novels & Poems</li>
+    <li>My Public Writings</li>
+    <li>Other Creative Projects</li>
+  </ul>
+  </div>
+  `;
+}
+
+function mouse_leave_info() {
+  var _info = document.getElementById("info");
+  _info.replaceChildren();
 }
 
 // ------------------- OPENING COMPUTER SCIENCE RESUME ------------------- #
 function open_cs_resume() {
-  var _main = empty_main_div();
+  window.location.href = "cs.html";
 }
 
 // ------------------- OPENING CREATIVE WRITING RESUME ------------------- #
 function open_creative_resume() {
-  empty_main_div();
+  window.location.href = "creative.html";
 }

@@ -66,21 +66,87 @@
 }
 /* ------------- THE RIGHT PANEL ------------- */
 
-.right-panel {
+.right-panel,
+.hidden-skill-tree {
   flex: 30%;
-  height: fit-content;
 
   text-align: center;
   border-left: 2px solid black;
-  border-bottom: 2px solid black;
+
+  color: black;
+  padding-bottom: 5vmin;
 }
 
-.right-panel > b {
+.right-panel > b,
+.hidden-skill-tree > b {
   font-size: 3.5vmin;
 }
 
-.right-panel > h2 {
+.right-panel > h2,
+.hidden-skill-tree > h2 {
   color: #2341ff;
-  padding-bottom: 1vmin;
-  border-bottom: 2px solid #2341ff;
+  padding-bottom: 2vmin;
+}
+
+.hidden-skill-tree {
+  display: none;
+
+  border: none;
+  border-bottom: 2px solid black;
+
+  margin-bottom: 2vmin;
+}
+
+/* ------------- INTERACTIVE RIGHT PANEL ------------- */
+
+/*
+  This will make the right panel disappear if the width is too small.
+  The panel should be accessible by a dropdown menu.
+*/
+
+.right-panel-dropdown {
+  display: none;
+}
+
+.right-panel-dropdown > button {
+  background-color: #0022ff;
+  border: solid 2px transparent;
+  border-radius: 15px;
+
+  font-size: 2vmin;
+  color: #ffffff;
+  padding: 8px;
+  margin: 1vmin 2.5vmin;
+
+  position: absolute;
+  right: 0%;
+  margin-top: 2vmin;
+  padding: 1vmin 3vmin 1vmin 3vmin;
+
+  transition: 0.5s;
+}
+
+.right-panel-dropdown > button:hover {
+  transition: 0.5s;
+  cursor: pointer;
+
+  font-size: 3vmin;
+  background-color: #5a6ffb;
+  color: #dedede;
+}
+
+@media screen and (max-width: 800px) {
+  .right-panel {
+    display: none;
+  }
+
+  .right-panel-dropdown {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .hidden-skill-tree {
+    display: none;
+  }
 }

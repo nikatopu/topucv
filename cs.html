@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="resume-icon.png" />
     <link rel="stylesheet" href="page_style.css" />
     <link rel="stylesheet" href="cs_style.css" />
     <title>TOPU CS CV</title>
     <script src="switching_resumes.js"></script>
+    <script src="skill_list.js"></script>
   </head>
   <body>
     <!-- THE HEADLINE -->
@@ -14,10 +16,42 @@
       Welcome To The
       <br />
       <button onclick="choose_between_resumes()">TOPU'S RESUME</button>
+      <div class="right-panel-dropdown">
+        <button onclick="open_skill_list()">SKILL LIST</button>
+      </div>
     </div>
 
     <div class="CS-Main">
       <div class="left-panel">
+        <!--------------------------------------- RIGHT PANEL IN LEFT PANEL --------------------------------------->
+        <div class="hidden-skill-tree" id="hidden-skill-tree">
+          <h2>Programming Languages</h2>
+          <b>HTML & CSS</b> - Intermediate
+          <br />
+          <br />
+          <b>JavaScript (Vanilla)</b> - Intermediate
+          <br />
+          <b>JavaScript (React)</b> - Novice
+          <br />
+          <b>TypeScript</b> - Fundamental Awareness
+          <br />
+          <br />
+          <b>Python (Vanilla)</b> - Intermediate
+          <br />
+          <b>Python (Django)</b> - Novice
+          <br />
+          <br />
+          <b>C#</b> - Fundamental Awareness
+          <br />
+          <br />
+          <b>GameMaker Language</b> - Advanced
+          <br />
+          <br />
+          <h2>Languages</h2>
+          <b>GEORGIAN</b> - Native
+          <br />
+          <b>ENGLISH</b> - Advanced
+        </div>
         <!--                                             THE LEFT PANEL                                                        -->
         <div class="block-info">
           <h2>GAME PROJECTS</h2>
@@ -102,7 +136,7 @@
           </div>
         </div>
       </div>
-      <div class="right-panel">
+      <div class="right-panel" id="right-panel">
         <h2>Programming Languages</h2>
         <b>HTML & CSS</b> - Intermediate
         <br />
@@ -122,7 +156,7 @@
         <b>C#</b> - Fundamental Awareness
         <br />
         <br />
-        <b>GML</b> - Advanced
+        <b>GameMaker Language</b> - Advanced
         <br />
         <br />
         <h2>Languages</h2>

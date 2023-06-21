@@ -1,6 +1,6 @@
 // ------------------- EMPTY THE MAIN DIV ------------------- #
 function empty_main_div() {
-  var main_div = document.getElementById("Main");
+  let main_div = document.getElementById("Main");
   main_div.replaceChildren();
   return main_div;
 }
@@ -12,10 +12,10 @@ function choose_between_resumes() {
 
 // Main Option Animations
 function mouse_over_cs() {
-  var _info = document.getElementById("info");
+  let _info = document.getElementById("info");
   _info.innerHTML = `
   <div class="Additional-Info">
-  <h3>Short Summery</h3>
+  <h3>Short Summary</h3>
   The CS side of my resume contains:
   <ul>
     <li>Programming Languages I Know</li>
@@ -27,10 +27,10 @@ function mouse_over_cs() {
 }
 
 function mouse_over_creative() {
-  var _info = document.getElementById("info");
+  let _info = document.getElementById("info");
   _info.innerHTML = `
   <div class="Additional-Info">
-  <h3>Short Summery</h3>
+  <h3>Short Summary</h3>
   The CREATIVE side of my resume contains:
   <ul>
     <li>My Short Novels & Poems</li>
@@ -42,7 +42,7 @@ function mouse_over_creative() {
 }
 
 function mouse_leave_info() {
-  var _info = document.getElementById("info");
+  let _info = document.getElementById("info");
   _info.replaceChildren();
 }
 

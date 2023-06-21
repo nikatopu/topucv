@@ -1,0 +1,64 @@
+body {
+  text-align: center;
+}
+
+body > b {
+  color: rgb(255, 0, 0);
+}
+
+.block-info {
+  margin: 1%;
+  border: 2px solid black;
+
+  color: black;
+  font-size: 3vmin;
+
+  padding: 3vmin;
+}
+
+.block-info > h1 {
+  text-align: center;
+  letter-spacing: 1vmin;
+}
+
+.block-info > h2 {
+  text-align: left;
+}
+
+.photo-text {
+  display: flex;
+  align-items: top;
+  justify-content: left;
+
+  text-align: left;
+}
+
+.photo-text > img,
+.photo-text > video {
+  width: 35%;
+  height: auto;
+}
+
+.photo-text > img:hover {
+  cursor: pointer;
+}
+
+.photo-text > p {
+  margin-left: 2vmin;
+}
+
+@media screen and (max-width: 1000px) {
+  .photo-text {
+    display: block;
+    align-items: top;
+    justify-content: left;
+
+    text-align: left;
+  }
+
+  .photo-text > img,
+  .photo-text > video {
+    width: 100%;
+    height: auto;
+  }
+}

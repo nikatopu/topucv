@@ -118,8 +118,9 @@
   padding: 8px;
   margin: 1vmin 2.5vmin;
 
-  position: absolute;
-  right: 0%;
+  position: relative;
+  left: 48%;
+  transform: translate(-48%);
   margin-top: 2vmin;
   padding: 1vmin 3vmin 1vmin 3vmin;
 

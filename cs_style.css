@@ -126,7 +126,8 @@
   transition: 0.5s;
 }
 
-.right-panel-dropdown > button:hover {
+.right-panel-dropdown > button:hover,
+.right-panel-dropdown > button:active {
   transition: 0.5s;
   cursor: pointer;
 
@@ -135,7 +136,7 @@
   color: #dedede;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .right-panel {
     display: none;
   }
@@ -145,7 +146,7 @@
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .hidden-skill-tree {
     display: none;
   }

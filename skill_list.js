@@ -10,7 +10,7 @@ function open_skill_list() {
 }
 
 window.onresize = function () {
-  if (window.innerWidth >= 800) {
+  if (window.innerWidth >= 1000) {
     skill_list_open = false;
     document.getElementById("hidden-skill-tree").style.display = skill_list_open
       ? "block"

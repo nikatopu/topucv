@@ -97,6 +97,13 @@
   margin-bottom: 2vmin;
 }
 
+progress {
+  width: 20vmin;
+  margin-left: 15px;
+
+  accent-color: #0022ff;
+  color: black;
+}
 /* ------------- INTERACTIVE RIGHT PANEL ------------- */
 
 /*

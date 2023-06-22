@@ -40,7 +40,7 @@ body > b {
 }
 
 .photo-text > img:hover {
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 .photo-text > p {

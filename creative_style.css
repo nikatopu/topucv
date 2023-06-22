@@ -36,6 +36,7 @@ body > b {
   align-items: flex-start;
   align-items: center;
   display: flex;
+  flex: content;
 
   margin: 2vmin;
 }
@@ -78,6 +79,16 @@ body > b {
     justify-content: left;
 
     text-align: left;
+  }
+
+  .social {
+    display: flex;
+    align-items: top;
+    justify-content: left;
+
+    flex-wrap: wrap;
+    flex: 50%;
+    flex-direction: row;
   }
 
   .photo-text > img,

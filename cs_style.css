@@ -99,10 +99,27 @@
 
 progress {
   width: 20vmin;
-  margin-left: 15px;
 
   accent-color: #0022ff;
   color: black;
+}
+
+.skills {
+  width: 70vmin;
+  margin: auto;
+
+  display: table;
+}
+
+.skills > b {
+  float: left;
+  margin-left: 8vmin;
+}
+
+.skills > progress {
+  float: right;
+  margin-right: 8vmin;
+  margin-top: 0.5vmin;
 }
 /* ------------- INTERACTIVE RIGHT PANEL ------------- */
 

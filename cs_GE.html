@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="resume-icon.png" />
+    <link rel="stylesheet" href="page_style.css" />
+    <link rel="stylesheet" href="cs_style.css" />
+    <title>TOPU CS PORTFOLIO</title>
+    <script src="switching_resumes_GE.js"></script>
+    <script src="skill_list.js"></script>
+  </head>
+  <body>
+    <!-- THE HEADLINE -->
+    <div class="Headline">
+      კეთილი იყოს თქვენი მობრძანება
+      <br />
+      <button onclick="choose_between_resumes()">თოფუს პორტფოლიოში</button>
+      <br />
+      <div class="language" onclick="{window.location.href='cs.html'}">
+        <button>ENG</button>
+      </div>
+    </div>
+
+    <div class="CS-Main">
+      <div class="left-panel">
+        <!--------------------------------------- RIGHT PANEL IN LEFT PANEL --------------------------------------->
+        <div class="hidden-skill-tree" id="hidden-skill-tree">
+          <h2>პროგრამირების ენები</h2>
+          <div class="skills">
+            <b>GameMaker Language</b>
+            <progress value="0.8"></progress>
+            <br />
+            <b>JavaScript (Vanilla)</b> <progress value="0.6"></progress>
+            <br />
+            <b>Python (Vanilla)</b> <progress value="0.6"></progress>
+            <br />
+            <b>HTML & CSS</b> <progress value="0.6"></progress>
+            <br />
+            <b>JavaScript (React)</b> <progress value="0.4"></progress>
+            <br />
+            <b>Python (Django)</b> <progress value="0.4"></progress>
+            <br />
+            <b>TypeScript</b> <progress value="0.2"></progress>
+            <br />
+            <b>C#</b> <progress value="0.2"></progress>
+          </div>
+          <br />
+          <br />
+          <h2>ენები</h2>
+          <div class="skills">
+            <b>ქართული</b> <progress value="1"></progress>
+            <br />
+            <b>ინგლისური</b> <progress value="0.8"></progress>
+          </div>
+        </div>
+        <!--                                             THE LEFT PANEL                                                        -->
+        <div class="block-info">
+          <h2>ვიდეო თამაშები</h2>
+          <h2 style="font-size: 2.5vmin">(დააკლიკეთ ფოტოს საიტის სანახავად)</h2>
+          <!--------------------------------------- C U B I C A L --------------------------------------------------->
+          <h1 style="color: #69809e">CUBICAL</h1>
+          <div class="photo-text">
+            <img
+              src="cubical-img.png"
+              id="https://nicolaeus.itch.io/cubical"
+              onclick="window.open(this.id)"
+            />
+            <p>
+              &ensp; ამ კონკრეტული თამაშით, ყველაზე მეტად ვამაყობ. თუმცა, შერეულ
+              ჟანრს მაინც ვაკრიტიკებ.
+              <br />
+              <br />
+              <b>&ensp; CUBICAL</b> უბრალოდ გასართობად შევქმენი 2D Engine-ით -
+              GameMaker. მთელი იდეა და სირთულე მხოლოდ იმაში იყო, რომ 3D-ს
+              მაგვარი თამაში უნდა შემექმნა 2D Engine-ის გამოყენებით.
+              <br />
+              <br />
+              &ensp; ამ პროექტზე მუშაობით ვისწავლე საინტერესო და ასე თუ ისე
+              რთული თავსატეხების აწყობა, ამავდროულად 2D არტისა და ხმის ეფექტების
+              შექმნა. შედეგად მივიღე დიდი გამოცდილება გეიმ დეველოპმენტის
+              მიმართულებით და ასევე ზოგადად პროგრამირების ინდუსტრიაში.
+            </p>
+          </div>
+          <br />
+          <!--------------------------------------- R O B O D V E N T U R E --------------------------------------------------->
+          <h1 style="color: #4e5257">THE ROBODVENTURE</h1>
+          <div class="photo-text">
+            <img
+              src="robodventure.png"
+              id="https://nicolaeus.itch.io/the-robodventure"
+              onclick="window.open(this.id)"
+            />
+            <p>
+              &ensp; ამ თამაშით ასე თუ ისე ვამაყობ, მაგრამ, სამწუხაროდ ერთი
+              სერიოზული პრობლემა აქვს - <b>ძალიან ბევრი დიალოგი!</b>
+              <br />
+              <br />
+              <b>&ensp; THE ROBODVENTURE</b> შეიქმნა საახალწლო თამაშების
+              კონკურსში, ისევ იგივე Engine-ის გამოყენებით. "კონკურსის" მთავარი
+              იდეა იყო ის, რომ მე, როგორც პირადი სანტა კლაუსი, ვიღაც
+              ადამიანისთვის უნდა შემექმნა ვიდეო თამაში, იქიდან გამომდინარე თუ
+              რას დამიწერდნენ წერილში.
+              <br />
+              <br />
+              &ensp; ამ პროექტზე მუშაობით აღმოვაჩინე ბევრი ახალი მექანიკა და
+              შესაძლებლობები დეველოპმენტის სფეროში, ამავდროულად კი ვისწავლე
+              მოკლე პერიოდში (1 თვეში) თამაშის შექმნა.
+            </p>
+          </div>
+          <!--------------------------------------- H O R S I N G A R O U N D --------------------------------------------------->
+          <h1 style="color: #5c4d3c">QUIT HORSING AROUND!</h1>
+          <div class="photo-text">
+            <img
+              src="horsing-around.png"
+              id="https://nicolaeus.itch.io/quit-horsing-around"
+              onclick="window.open(this.id)"
+            />
+            <p>
+              &ensp; ამ თამაშით დიდად არ ვამაყობ, მაგრამ მაინც კმაყოფილი ვარ,
+              რადგან ძალიან უცნაურ სიტუაციაში შევქმენი...
+              <br />
+              <br />
+              <b>&ensp; QUIT HORSING AROUND! </b> ისევ და ისევ კონკურსისთვის
+              გავაკეთე, იმავე Engine-ში. ლიმიტაციებისა და მთავარი თემის შედეგად,
+              რაღაც ვითომ სასაცილო იდეა მომივიდა, რომ ინგლისური ფრაზა - "Quit
+              Horsing Around" მექცია თამაშის მთავარ "ოხუნჯობად".
+              <br />
+              <br />
+              &ensp; ამ პროექტზე მუშაობით კი სტრესულ სიტუაციებში და ძაააალიან
+              მოკლე პერიოდში მუშაობა ვისწავლე, რის შედეგადაც, ჩემი აზრით, კარგი
+              თვისებები განვივითარე.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="right-panel" id="right-panel">
+        <h2>პროგრამირების ენები</h2>
+        <div class="skills">
+          <b>GameMaker Language</b>
+          <progress value="0.8"></progress>
+          <br />
+          <b>JavaScript (Vanilla)</b>
+          <progress value="0.6"></progress>
+          <br />
+          <b>Python (Vanilla)</b> <progress value="0.6"></progress>
+          <br />
+          <b>HTML & CSS</b> <progress value="0.6"></progress>
+          <br />
+          <b>JavaScript (React)</b> <progress value="0.4"></progress>
+          <br />
+          <b>Python (Django)</b> <progress value="0.4"></progress>
+          <br />
+          <b>TypeScript</b> <progress value="0.2"></progress>
+          <br />
+          <b>C#</b> <progress value="0.2"></progress>
+        </div>
+        <br />
+        <br />
+        <h2>ენები</h2>
+        <div class="skills">
+          <b>ქართული</b> <progress value="1"></progress>
+          <br />
+          <b>ინგლისური</b> <progress value="0.8"></progress>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

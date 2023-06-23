@@ -1,15 +1,15 @@
 /* ------------- REDESIGN ------------- */
 body {
-  background-color: #fffefd;
-  color: #fffefd;
+  background-color: #2b3149;
+  color: #f5f6f8;
 }
 
 .Headline {
-  background-color: #1e3a4d;
+  background-color: #592b51;
 }
 
 .Headline > button {
-  color: #b3fbd5;
+  color: #9389c3;
 }
 
 /* ------------- THE TITLE ------------- */
@@ -19,7 +19,7 @@ body {
 
   font-size: 4vmin;
   text-align: center;
-  color: #1e3a4d;
+  color: #f5f6f8;
 }
 
 .CSTitle > h2 {
@@ -30,7 +30,7 @@ body {
 /* ------------- THE MAIN BODY ------------- */
 
 .CS-Main {
-  color: #1e3a4d;
+  color: #f5f6f8;
   display: flex;
 
   line-height: 4vmin;
@@ -87,7 +87,7 @@ body {
   text-align: center;
   border-left: 2px solid black;
 
-  color: #1e3a4d;
+  color: #f5f6f8;
   padding-bottom: 5vmin;
 }
 
@@ -98,7 +98,7 @@ body {
 
 .right-panel > h2,
 .hidden-skill-tree > h2 {
-  color: #266bb0;
+  color: #9389c3;
   padding-bottom: 2vmin;
 }
 
@@ -114,7 +114,7 @@ body {
 progress {
   width: 20vmin;
 
-  accent-color: #266bb0;
+  accent-color: #9389c3;
 }
 
 .skills {
@@ -146,7 +146,7 @@ progress {
 }
 
 .right-panel-dropdown > button {
-  background-color: #266bb0;
+  background-color: #9389c3;
   border: solid 2px transparent;
   border-radius: 15px;
 
@@ -170,7 +170,7 @@ progress {
   cursor: pointer;
 
   font-size: 3vmin;
-  background-color: #5a6ffb;
+  background-color: #9389c3;
   color: #dedede;
 }
 

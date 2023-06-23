@@ -1,3 +1,17 @@
+/* ------------- REDESIGN ------------- */
+body {
+  background-color: #ede2da;
+  color: #ede2da;
+}
+
+.Headline {
+  background-color: #311511;
+}
+
+.Headline > button {
+  color: #e5c775;
+}
+
 body {
   text-align: center;
 }
@@ -10,7 +24,7 @@ body > b {
   margin: 1%;
   border: 2px solid black;
 
-  color: black;
+  color: #311511;
   font-size: 3vmin;
 
   padding: 3vmin;

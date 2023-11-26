@@ -1,0 +1,131 @@
+:root {
+  --background-color: #fff3e4;
+  --primary-color: #4a5868;
+  --seconadry-color: #e6e1db;
+  --accent-color: #8da9ce;
+  --text-color: #181511;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: larger;
+}
+
+/* Title Block */
+.title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align vertically centered */
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.title {
+  font-weight: bold;
+  text-align: center; /* Center-align the text */
+  margin: 0;
+  font-size: 5.5vmin;
+}
+
+.title-image-container {
+  overflow: hidden;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 95%;
+  padding: 15px;
+}
+
+/* Buttons */
+.buttons {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100vmax;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: var(--accent-color);
+  cursor: pointer;
+  margin: 1% 3%;
+  font-size: 4vmin;
+  width: 15vmax;
+  max-width: 100vmax;
+}
+
+@keyframes selecting {
+  from {
+    color: var(--accent-color);
+  }
+  to {
+    color: var(--seconadry-color);
+  }
+}
+
+button :not(.active):hover {
+  animation-name: selecting;
+  animation-duration: 0.5s;
+  color: var(--seconadry-color);
+}
+
+button.active {
+  color: var(--seconadry-color);
+  border-bottom: 2px solid var(--seconadry-color);
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* A Block and B Block */
+.content-block {
+  display: flex;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.a-block,
+.b-block {
+  display: flex; /* Add display flex to align image and text */
+  position: relative;
+  overflow: hidden;
+  padding: 30px 10px;
+}
+
+.a-block {
+  background-color: var(--secondary-color);
+}
+.b-block {
+  background-color: var(--background-color);
+}
+
+.block-text,
+.block-image {
+  flex: 1;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.block-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .a-block {
+    flex-direction: column; /* Stack elements in reverse order for smaller screens */
+  }
+
+  .b-block {
+    flex-direction: column-reverse; /* Stack elements in regular order for smaller screens */
+  }
+}

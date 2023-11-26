@@ -3,46 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="resume-icon.png" />
-    <link rel="stylesheet" href="page_style.css" />
-    <title>TOPU PORTFOLIO</title>
-    <script src="switching_resumes.js"></script>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- THE HEADLINE -->
-    <div class="Headline">
-      Welcome To The
-      <br />
-      <button onclick="choose_between_resumes()">TOPU'S PORTFOLIO</button>
-      <br />
-      <div class="language" onclick="{window.location.href='index_GE.html'}">
-        <button>GEO</button>
+    <!-- Title Block -->
+    <div class="title-block">
+      <div class="title-image-container">
+        <div class="title">Nikoloz Topuridze's Portfolio</div>
+        <a
+          rel="noopener"
+          target="_blank"
+          href="https://www.linkedin.com/in/nikoloz-topuridze-258676270/"
+        >
+          <img
+            src="https://scontent.ftbs6-2.fna.fbcdn.net/v/t39.30808-6/278151647_3132869180363066_567923250286443070_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=tk-ttSYOUpMAX-2VpWv&_nc_ht=scontent.ftbs6-2.fna&oh=00_AfBJVU5CtM2wyQKAevEW64U5TS7lp6IJWFhS2O9IGgCAjQ&oe=65667215"
+            alt="Profile"
+            class="profile-image"
+          />
+        </a>
+      </div>
+      <div class="buttons">
+        <button id="state1Btn"><b>Work Experience</b></button>
+        <button id="state2Btn"><b>Game Development</b></button>
+        <button id="state3Btn"><b>Creative Writing</b></button>
+        <!--         <button><b>PlaceHolder</b></button>
+        <button><b>PlaceHolder</b></button>
+        <button><b>PlaceHolder</b></button> -->
       </div>
     </div>
-    <div class="Main" id="Main">
-      <!--  CHOOSING RESUME  -->
+    <!-- Content Blocks -->
+    <div id="content-container"></div>
 
-      <div class="WhichResume">
-        <h2>Choose The Theme</h2>
-        <div class="choose-resume-buttons">
-          <button
-            onclick="open_cs_resume()"
-            onmouseover="mouse_over_cs()"
-            onmouseleave="mouse_leave_info()"
-          >
-            Computer Science
-          </button>
-          <button
-            onclick="open_creative_resume()"
-            onmouseover="mouse_over_creative()"
-            onmouseleave="mouse_leave_info()"
-          >
-            Creative Writing
-          </button>
-        </div>
-
-        <div id="info"></div>
-      </div>
-    </div>
+    <script src="script.js"></script>
   </body>
 </html>

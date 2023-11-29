@@ -52,7 +52,7 @@ creative_writing = [
 
 additional_skills = [
   {
-    title: "",
+    title: "This page is still under development",
     text: "",
     image: "",
     link: "",
@@ -60,7 +60,7 @@ additional_skills = [
 ];
 about_me = [
   {
-    title: "",
+    title: "This page is still under development",
     text: "",
     image: "",
     link: "",
@@ -84,28 +84,35 @@ function createContentBlocks(list) {
 
     const textDiv = document.createElement("div");
     textDiv.classList.add("block-text");
-    textDiv.innerHTML = `<h2>${item.title}</h2>${item.text}`;
 
-    const imageDiv = document.createElement("div");
-    imageDiv.classList.add("block-image");
-    const image = document.createElement("img");
-    image.src = item.image;
-    image.alt = `${item.title} Image`;
-    image.style = "cursor: pointer;";
-    image.addEventListener("click", () => {
-      window.open(item.link);
-    });
+    if (item.title != "This page is still under development") {
+      textDiv.innerHTML = `<h2>${item.title}</h2>${item.text}`;
 
-    if (index % 2 === 0) {
-      block.appendChild(imageDiv);
+      const imageDiv = document.createElement("div");
+      imageDiv.classList.add("block-image");
+      const image = document.createElement("img");
+      image.src = item.image;
+      image.alt = `${item.title} Image`;
+      image.style = "cursor: pointer;";
+      image.addEventListener("click", () => {
+        window.open(item.link);
+      });
+
+      if (index % 2 === 0) {
+        block.appendChild(imageDiv);
+      }
+
+      imageDiv.appendChild(image);
+      block.appendChild(textDiv);
+      if (index % 2 === 1) {
+        block.appendChild(imageDiv);
+      }
+      container.appendChild(block);
+    } else {
+      textDiv.innerHTML = `<h2>${item.title}</h2>`;
+      block.appendChild(textDiv);
+      container.appendChild(block);
     }
-
-    imageDiv.appendChild(image);
-    block.appendChild(textDiv);
-    if (index % 2 === 1) {
-      block.appendChild(imageDiv);
-    }
-    container.appendChild(block);
   });
 }
 

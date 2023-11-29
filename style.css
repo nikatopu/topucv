@@ -148,4 +148,16 @@ button.active {
   .b-block {
     flex-direction: column-reverse; /* Stack elements in regular order for smaller screens */
   }
+
+  .block-image {
+    display: block;
+  }
+
+  .block-text > b {
+    font-size: 4vmin;
+  }
+
+  .block-text > p {
+    font-size: 3vmin;
+  }
 }

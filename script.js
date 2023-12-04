@@ -3,15 +3,13 @@ const work_experience = [
   {
     title: "Social Media Manager at Career Home",
     text: "<b>1. Social Media Management and Content Creation</b> <p>&ensp; I played a key role in managing multiple social media platforms, overseeing content creation and implementing strategies to boost engagement and enhance our online presence.</p><b>2. Customer Relationship Building</b><p>&ensp; In addition to social media management, my focus extended to cultivating and sustaining strong customer relationships. I ensured prompt responses to inquiries, comments, and messages, aiming for high customer satisfaction and a favorable brand image.</p><b>3. Video Editing for Effective Storytelling</b><p>&ensp; Taking on the responsibility of video editing, I meticulously planned, edited, and produced compelling video content. These videos effectively showcased our products/services, fostering a deeper connection with our audience.</p><b>4. Graphic Design for Brand Consistency</b><p>&ensp; As part of the content creation process, I actively contributed to graphic design tasks. This encompassed the creation of visually appealing elements for social media posts, maintaining brand consistency and visual allure across all platforms</p>",
-    image:
-      "https://scontent.ftbs6-2.fna.fbcdn.net/v/t39.30808-6/376672486_177598988690070_1869829048044851372_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=MmUjtyMU_PsAX92NoP8&_nc_ht=scontent.ftbs6-2.fna&oh=00_AfDraxnxP_ZVAmUfSyl0JvT9ew6GHhFvrfbRkTNqBylJJQ&oe=65655C66",
+    image: "/Photos/Career Home Sample.jpg",
     link: "https://www.facebook.com/profile.php?id=100093199086358",
   },
   {
     title: "Sales & Marketing Associate at Iberieli",
     text: "<b>1. Business Relationship Development</b><p>&ensp;I developed and maintained strong relationships with business associates to ensure ongoing collaboration and satisfaction.</p><b>2. Direct Sales and Customer Engagement</b><p>&ensp;In my role, I directly sold wine to customers, using persuasive communication and product knowledge to drive sales and meet customer needs effectively.</p><b>3. Market Expansion through Strategic Marketing</b><p>&ensp;I played a significant part in expanding the market reach of the family business by targeting and engaging new audiences through strategic marketing initiatives.</p><b>4. Brand Ambassador at International Events</b><p>&ensp;Moreover, I served as a representative of Iberieli at various festivals, acting as a brand ambassador. This involved showcasing company products at international events, including a London-based exhibition, where I successfully promoted and represented the brand to a broader audience.</p>",
-    image:
-      "https://scontent.ftbs6-2.fna.fbcdn.net/v/t39.30808-1/263399615_4922209917797553_6286832800449964494_n.jpg?stp=dst-jpg_p320x320&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=lswIsTNkcCUAX_y8ucZ&_nc_ht=scontent.ftbs6-2.fna&oh=00_AfAeLkXazgiA2JXHNkT2YmiIMPneV7A0OvajGtawf45LEQ&oe=656650B5",
+    image: "/Photos/Iberieli.jpg",
     link: "https://www.facebook.com/iberieliwinerypage",
   },
 ];
@@ -44,8 +42,7 @@ creative_writing = [
     title: "Poem - Let's Fly Far",
     text: "<b>1. Collaborative Creation in Animation</b><p>&ensp;I played a role in creating the poetic element of this animation, with my sister, Mariam Topuridze, handling the animation, and my brother, Ioane Topuridze, composing the musical accompaniment.</p><b>2. Inspiration from Caterpillar Transformations</b><p>&ensp;The inspiration for the poem stemmed from a straightforward video that highlighted the distinctions between two types of caterpillars. These caterpillars, though leading similar lives, undergo diverse transformations during their development.</p><b>3. Mentally Engaging Pursuit</b><p>&ensp;Participating in the creation of this poem proved to be a mentally engaging pursuit. While the act of writing itself was conventional, the true fascination lay in the collaborative effort with my siblings to produce a collective work. Additionally, I took on the responsibility of translating the poem into English, a task I believe I carried out proficiently.</p><b>4. Enriching Skills and Professional Attributes</b><p>&ensp;This experience has enriched my skill set and professional attributes in various ways. The collaboration with my siblings underscored my ability for teamwork and cooperation, highlighting my effectiveness in contributing to a collaborative creative process. The translation task further showcased my linguistic proficiency and attention to detail. Collectively, this multifaceted involvement demonstrates my adaptability, creativity, and meticulous approach to tasks, qualities that significantly enhance my capabilities as a work applicant.</p>",
     //Yes I'm using a discord photo, because... why not
-    image:
-      "https://media.discordapp.net/attachments/435802394375225346/1178340298410172447/oh.png?ex=6575c9eb&is=656354eb&hm=32b5d7d027a8ce939f06c4559e7f76957ce1ce0fdc5d9b76b02c1a5e7d30b558&=&format=webp&width=927&height=663",
+    image: "/Photos/fly far.jpg",
     link: "https://nikatopu.github.io/topuportfolio/fly%20far.mp4",
   },
 ];

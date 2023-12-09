@@ -42,16 +42,22 @@ creative_writing = [
     title: "Poem - Let's Fly Far",
     text: "<b>1. Collaborative Creation in Animation</b><p>&ensp;I played a role in creating the poetic element of this animation, with my sister, Mariam Topuridze, handling the animation, and my brother, Ioane Topuridze, composing the musical accompaniment.</p><b>2. Inspiration from Caterpillar Transformations</b><p>&ensp;The inspiration for the poem stemmed from a straightforward video that highlighted the distinctions between two types of caterpillars. These caterpillars, though leading similar lives, undergo diverse transformations during their development.</p><b>3. Mentally Engaging Pursuit</b><p>&ensp;Participating in the creation of this poem proved to be a mentally engaging pursuit. While the act of writing itself was conventional, the true fascination lay in the collaborative effort with my siblings to produce a collective work. Additionally, I took on the responsibility of translating the poem into English, a task I believe I carried out proficiently.</p><b>4. Enriching Skills and Professional Attributes</b><p>&ensp;This experience has enriched my skill set and professional attributes in various ways. The collaboration with my siblings underscored my ability for teamwork and cooperation, highlighting my effectiveness in contributing to a collaborative creative process. The translation task further showcased my linguistic proficiency and attention to detail. Collectively, this multifaceted involvement demonstrates my adaptability, creativity, and meticulous approach to tasks, qualities that significantly enhance my capabilities as a work applicant.</p>",
     //Yes I'm using a discord photo, because... why not
-    image: "/Photos/fly far.jpg",
+    image: "Photos/fly far.jpg",
     link: "https://nikatopu.github.io/topuportfolio/fly%20far.mp4",
   },
 ];
 
 additional_skills = [
   {
-    title: "This page is still under development",
-    text: "",
-    image: "",
+    title: "Microsoft Office",
+    text: "<b>1. Microsoft Word</b><p>&ensp;My proficiency with Microsoft Word extends beyond personal use to professional applications. Over the past 5 years, I've garnered extensive experience, acquiring nuanced skills and employing various tricks. Notably, I contributed to the creation and design of blogs for Career Home.</p><b>2. Microsoft PowerPoint</b><p>&ensp;I possess significant expertise in Microsoft PowerPoint, having developed numerous professional-level slideshows. These presentations serve not only personal needs but also contribute to major university events like Podcasts. My adeptness with the latest version of PowerPoint allows me to utilize a wide range of features effectively.</p><b>3. Microsoft Excel</b><p>&ensp;While I have limited experience with Microsoft Excel, I've predominantly relied on alternative tools like Google Sheets for professional tasks. Despite my beginner-level skills, I bring value through my proficiency, proving to be a useful contributor.</p>",
+    image: "Photos/Microsoft Office.jpg",
+    link: "",
+  },
+  {
+    title: "Adobe Products",
+    text: "<b>1. Adobe Photoshop</b><p>&ensp;In the realm of graphic design, I predominantly utilized free alternatives to Adobe Photoshop, such as paint.net and Krita, for crafting straightforward designs. Nevertheless, I possess a degree of proficiency in using Adobe Photoshop itself.</p><b>2. Adobe Illustrator</b><p>&ensp;My engagement with vector-based designs has been primarily for personal applications, providing me with a modest level of familiarity with Adobe Illustrator.</p><b>3. Adobe Premiere Pro</b><p>&ensp;While my usage of alternatives like Davinci Resolve and VSDC has been more frequent, I gained substantial professional experience in video editing through my role at Career Home (refer to Work Experience page), demonstrating competence in Adobe Premiere Pro.</p>",
+    image: "Photos/Adobe LOGO.jpg",
     link: "",
   },
 ];
@@ -85,25 +91,33 @@ function createContentBlocks(list) {
     if (item.title != "This page is still under development") {
       textDiv.innerHTML = `<h2>${item.title}</h2>${item.text}`;
 
-      const imageDiv = document.createElement("div");
-      imageDiv.classList.add("block-image");
-      const image = document.createElement("img");
-      image.src = item.image;
-      image.alt = `${item.title} Image`;
-      image.style = "cursor: pointer;";
-      image.addEventListener("click", () => {
-        window.open(item.link);
-      });
+      if (item.image != "") {
+        const imageDiv = document.createElement("div");
+        imageDiv.classList.add("block-image");
+        const image = document.createElement("img");
+        image.src = item.image;
+        image.alt = `${item.title} Image`;
 
-      if (index % 2 === 0) {
-        block.appendChild(imageDiv);
+        if (item.link != "") {
+          image.style = "cursor: pointer;";
+          image.addEventListener("click", () => {
+            window.open(item.link);
+          });
+        }
+
+        if (index % 2 === 0) {
+          block.appendChild(imageDiv);
+        }
+
+        imageDiv.appendChild(image);
+        block.appendChild(textDiv);
+        if (index % 2 === 1) {
+          block.appendChild(imageDiv);
+        }
+      } else {
+        block.appendChild(textDiv);
       }
 
-      imageDiv.appendChild(image);
-      block.appendChild(textDiv);
-      if (index % 2 === 1) {
-        block.appendChild(imageDiv);
-      }
       container.appendChild(block);
     } else {
       textDiv.innerHTML = `<h2>${item.title}</h2>`;

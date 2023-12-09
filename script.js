@@ -3,13 +3,13 @@ const work_experience = [
   {
     title: "Social Media Manager at Career Home",
     text: "<b>1. Social Media Management and Content Creation</b> <p>&ensp; I played a key role in managing multiple social media platforms, overseeing content creation and implementing strategies to boost engagement and enhance our online presence.</p><b>2. Customer Relationship Building</b><p>&ensp; In addition to social media management, my focus extended to cultivating and sustaining strong customer relationships. I ensured prompt responses to inquiries, comments, and messages, aiming for high customer satisfaction and a favorable brand image.</p><b>3. Video Editing for Effective Storytelling</b><p>&ensp; Taking on the responsibility of video editing, I meticulously planned, edited, and produced compelling video content. These videos effectively showcased our products/services, fostering a deeper connection with our audience.</p><b>4. Graphic Design for Brand Consistency</b><p>&ensp; As part of the content creation process, I actively contributed to graphic design tasks. This encompassed the creation of visually appealing elements for social media posts, maintaining brand consistency and visual allure across all platforms</p>",
-    image: "/Photos/Career Home Sample.jpg",
+    image: "Photos/Career Home Sample.jpg",
     link: "https://www.facebook.com/profile.php?id=100093199086358",
   },
   {
     title: "Sales & Marketing Associate at Iberieli",
     text: "<b>1. Business Relationship Development</b><p>&ensp;I developed and maintained strong relationships with business associates to ensure ongoing collaboration and satisfaction.</p><b>2. Direct Sales and Customer Engagement</b><p>&ensp;In my role, I directly sold wine to customers, using persuasive communication and product knowledge to drive sales and meet customer needs effectively.</p><b>3. Market Expansion through Strategic Marketing</b><p>&ensp;I played a significant part in expanding the market reach of the family business by targeting and engaging new audiences through strategic marketing initiatives.</p><b>4. Brand Ambassador at International Events</b><p>&ensp;Moreover, I served as a representative of Iberieli at various festivals, acting as a brand ambassador. This involved showcasing company products at international events, including a London-based exhibition, where I successfully promoted and represented the brand to a broader audience.</p>",
-    image: "/Photos/Iberieli.jpg",
+    image: "Photos/Iberieli.jpg",
     link: "https://www.facebook.com/iberieliwinerypage",
   },
 ];

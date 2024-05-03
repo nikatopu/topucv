@@ -259,13 +259,13 @@ footer > h1 > b {
 
 /* ------------------------- Responsivness ------------------------- */
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
     .dropdown {
         display: none;
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
     .dropdown {
         display: block;
     }

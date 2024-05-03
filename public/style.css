@@ -1,11 +1,16 @@
-/* Basics */
+/* ------------------------- Basics ------------------------- */
 :root {
     --color-text: #071513;
+    --color-shadow: #07151376;
+
     --color-background: #F7FCFC;
     --color-background-darker: #d6d8d8;
+
     --color-primary: #52C4C1;
     --color-secondary: #93C3DA;
     --color-accent: #749BD0;
+
+    --color-shinyblue: #0094FF;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Rufina:700|Rufi:400');
@@ -19,7 +24,11 @@ body {
     margin: 0px;
 }
 
-/* The header */
+* {
+    font-family: 'Rufi';
+}
+
+/* ------------------------- The header ------------------------- */
 
 header {
     display: flex;
@@ -60,4 +69,203 @@ header {
     transform: scale(1.1) translateY(-1px);
 
     transition-duration: 0.25s;
+}
+
+/* ------------------------- Animate Styles ------------------------- */
+
+.hover-animate {
+    transition-duration: 0.25s;
+}
+
+.hover-animate:hover {
+    transition-duration: 0.25s;
+    transform: scale(1.075) translateY(-1svh);
+}
+
+.shadow {
+    box-shadow: 0px 2px 15px var(--color-shadow);
+
+}
+
+/* ------------------------- Button Styles ------------------------- */
+
+.btn {
+    cursor: pointer;
+
+    border-color: transparent;
+    border-radius: 15px;
+    
+    width: 20svw;
+    height: 9svh;
+
+    font-size: 1.8svw;
+}
+
+.primary {
+    background-color: var(--color-primary);
+    font-weight: bold;
+}
+
+.secondary {
+    background-color: var(--color-secondary);
+}
+
+.primarysecondary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    width: 100%;
+}
+
+/* ------------------------- Section Styles ------------------------- */
+
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 100svh;
+}
+
+.smaller-sect {
+    height: calc(100svh - 44px);
+}
+
+.reversed {
+    flex-direction: row-reverse;
+}
+
+/* ------------------------- Text Styles ------------------------- */
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    width: 50%;
+    height: 50%;
+}
+
+.text > h1 > b,
+.text > h2 > b {
+    color: var(--color-accent);
+}
+
+.text > p > b {
+    color: var(--color-accent);
+}
+
+.text > h2 {
+    font-size: 7svh;
+    margin: 0;
+}
+
+.text > h1 {
+    font-size: 9svh;
+    margin: 0;
+}
+
+.text > p {
+    font-size: 5svh;
+    margin: 8svh 0svh;
+
+    width: 90%;
+}
+
+/* ------------------------- Photo Styles ------------------------- */
+
+.photo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo > img {
+    height: 70svh;
+}
+
+.resources-used {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70svh;
+}
+
+.resources-used > img {
+    width: 17svh;
+}
+
+.cornered {
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cornered > img {
+    width: 100%;
+    object-fit:contain; 
+}
+
+/* ------------------------- Footer Styles ------------------------- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100svh;
+    width: 100svw;
+}
+
+footer > h1 {
+    font-size: 10svh;
+}
+
+footer > h1 > b {
+    color: var(--color-accent);
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 80%;
+}
+
+.socials > img {
+    cursor: pointer;
+    width: 20svw;
+}
+
+
+
+
+
+
+/* ------------------------- Responsivness ------------------------- */
+
+@media screen and (min-width: 1280px) {
+    .dropdown {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .dropdown {
+        display: block;
+    }
+
+    .buttons {
+        display: none;   
+    }
 }

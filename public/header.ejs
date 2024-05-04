@@ -28,9 +28,44 @@
                 Projects
             </button>
         </div>
-        <button class="dropdown">>>></button>
+        <button class="dropdown" onclick="openDropdown()"><</button>
+        <script>
+            function openDropdown() {
+                let dropdown = document.getElementById("dropdown");
+                let body = document.getElementsByTagName("body");
+                let is_open = dropdown.style.left === "100vw" ? false : true;
+                if (is_open) {
+                    dropdown.style.left = "100vw"
+                    body[0].style.overflow = "scroll";
+                } else {
+                    dropdown.style.left = "0vw";
+                    body[0].style.height = "100svh";
+                    body[0].style.overflow = "hidden";
+                }
+            }
+        </script>
     </header>
 
+    <div id="dropdown" style="left: 100vw;">
+        <button class="dropdown" onclick="openDropdown()">></button>
+        <button
+        onclick = openFigma_portfolio()>
+        <script>
+            function openFigma_portfolio() {
+                window.open("https://www.figma.com/file/6epSNUS7R0rbtsGkNezBYt/Nika's-Portfolio?type=design&node-id=1%3A29&mode=design&t=RSqVrblQBadxecLB-1", "_blank");
+            }
+        </script>
+            Figma
+        </button>
+        <button
+        onclick="openDropdown(); window.scrollTo(0, document.body.scrollHeight);">
+            Socials
+        </button>
+        <button
+        onclick = 'window.open("https://github.com/nikatopu/", "_blank")'>
+            Projects
+        </button>
+    </div>
     <script>
         let old_y = window.scrollY;
         let header = document.getElementById("header");

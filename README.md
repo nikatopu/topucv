@@ -5,7 +5,8 @@ The design for this website was created using Figma.
 
 This projects the best projects I have created so far.
 
-// ------------------------ Running ------------------------ //
+// ------------------------ RUNNING ------------------------ //
+
 You can visit the website: https://topuportfolio.onrender.com/
 But if you do want to test this project on your device, here are the steps:
 

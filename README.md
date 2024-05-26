@@ -1,18 +1,41 @@
-// ------------------------ ABOUT ------------------------ //
 
-This project was done by using NodeJS, express.js & EJS files.
-The design for this website was created using Figma.
+# My Portfolio
 
-This projects the best projects I have created so far.
+This projects the best projects I have created *so far*.
 
-// ------------------------ RUNNING ------------------------ //
+If you are interested in my projects, you can visit the running [website](https://topuportfolio.onrender.com/).
 
-You can visit the website: https://topuportfolio.onrender.com/
-But if you do want to test this project on your device, here are the steps:
+My github account is also a portfolio, but this website is a bit more pleasing for users, while also highlighting my skills as a developer.
 
-  1) Download the whole project or use gitpull;
-  2) Open the terminal of this project by using the built-in terminal of your code editor;
-  3) Type "npm i" to install all node modules needed for the website;
-  4) Type "nodemon index.js" to run the website;
-  5) Open localhost:3000
-  6) Enjoy!
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/nikatopu/topuportfolio.git
+```
+
+Go to the project directory
+
+```bash
+  cd topuportfolio
+```
+
+Install dependencies
+
+```bash
+  npm i
+```
+
+Start the server
+
+```bash
+  nodemon index.js
+```
+
+Open the server on your localhost with the port `3000`
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://topuportfolio.onrender.com/)
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nikoloz-topuridze-258676270/)
+

@@ -1,8 +1,138 @@
 <%- include("header.ejs") %>
 
-<%- include("./my info/info.ejs") %>
-<%- include("./projects/iberieli.ejs") %>
-<%- include("./projects/WEWE.ejs")  %>
-<%- include("./projects/cubical.ejs") %>
+<main>
 
+  <!---------------------- Hero Section ---------------------->
+  
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">My Portfolio</h1>
+        <p class="lead text-body-secondary">All of the projects I have worked on, either professionally or personally. These projects are meant to showcase the part of my knowledge I have successfully portrayed.</p>
+        <p>
+          <a href="https://www.linkedin.com/in/nikoloz-topuridze-258676270/" class="btn btn-primary my-2">LinkedIn</a>
+          <a href="https://github.com/nikatopu/" class="btn btn-secondary my-2">Github Projects</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!---------------------- All Projects ---------------------->
+
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <!---------------------- IBERIELI ---------------------->
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./projects/Iberieli Logo.webp" style="object-fit: cover;" class="card-img-top" width="auto" height="225" preserveAspectRatio="xMidYMid slice">
+            <div class="card-body">
+              <p class="card-text">Collaborated with Iberieli Wine Cellar to personally design and develop their brand new website from scratch.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://iberieli.com/" target="_blank" class="btn btn-sm btn-outline-secondary">Visit Iberieli</a>
+                </div>
+                <small class="text-body-secondary">HTML, CSS, JS</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!---------------------- WatchedThem ---------------------->
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./projects/WatchedThem.webp" style="object-fit: cover;" class="card-img-top" width="auto" height="225" preserveAspectRatio="xMidYMid slice">
+            <div class="card-body">
+              <p class="card-text">The movie review website with user verification, bcrypt encryption, PostgreSQL database, NodeJS expres.js server handling, handmade css and Figma design.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://github.com/nikatopu/WatchedThem" target="_blank" class="btn btn-sm btn-outline-secondary">Visit WatchedThem</a>
+                </div>
+                <small class="text-body-secondary">Postgresql, NodeJS</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!---------------------- WeWe (The Weather Website) ---------------------->
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./projects/WEWE.webp" style="object-fit: cover;" class="card-img-top" width="auto" height="225" preserveAspectRatio="xMidYMid slice">
+            <div class="card-body">
+              <p class="card-text">Project made with NodeJS and Express to work with APIs. The design for this website was done by using Figma.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://wewe-g7w6.onrender.com/" target="_blank" class="btn btn-sm btn-outline-secondary">Visit WeWe</a>
+                </div>
+                <small class="text-body-secondary">Axios.js, Express.js</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!---------------------- Cubical ---------------------->
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./projects/Cubical.webp" style="object-fit: cover;" class="card-img-top" width="auto" height="225" preserveAspectRatio="xMidYMid slice">
+            <div class="card-body">
+              <p class="card-text">The showcase of my creativity and dedication not only in game development, but the graphical and sound design.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://nicolaeus.itch.io/cubical" target="_blank" class="btn btn-sm btn-outline-secondary">Check Out Cubical</a>
+                </div>
+                <small class="text-body-secondary">Pixel Art, Music</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!---------------------- The Robodventure ---------------------->
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./projects/Robodventure.webp" style="object-fit: cover;" class="card-img-top" width="auto" height="225" preserveAspectRatio="xMidYMid slice">
+            <div class="card-body">
+              <p class="card-text">The storywriting in this little platformer game I single-handedly made is just a glimpse of my creativity.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://nicolaeus.itch.io/the-robodventure" target="_blank" class="btn btn-sm btn-outline-secondary">Check Out Robodventure</a>
+                </div>
+                <small class="text-body-secondary">Creative Writing</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!---------------------- Quit Horsing Around! ---------------------->
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./projects/HorsingAround.webp" style="object-fit: cover;" class="card-img-top" width="auto" height="225" preserveAspectRatio="xMidYMid slice">
+            <div class="card-body">
+              <p class="card-text">Working in a tight deadline, participating in 2 different GameJams, I came up with a game that crossed two themes in one creative way.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://nicolaeus.itch.io/quit-horsing-around" target="_blank" class="btn btn-sm btn-outline-secondary">Horsing Around</a>
+                </div>
+                <small class="text-body-secondary">Outside the box thinking</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+        
 <%- include("footer.ejs") %>

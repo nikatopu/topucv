@@ -13,11 +13,9 @@
     --color-shinyblue: #0094FF;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Rufina:700|Rufi:400');
-
 body {
     background-color: var(--color-background);
-    font-family: 'Rufi';
+    font-family: 'Inter';
 
     overflow-x: hidden;
 
@@ -25,7 +23,7 @@ body {
 }
 
 * {
-    font-family: 'Rufi';
+    font-family: 'Inter';
 }
 
 /* ------------------------- The header ------------------------- */
